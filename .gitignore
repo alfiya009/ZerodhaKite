@@ -1,0 +1,45 @@
+# Node modules
+node_modules/
+
+# Build output
+build/
+dist/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# VS Code settings
+.vscode/
+
+# Coverage
+coverage/
+
+# Misc
+*.log
+*.tmp
+
+# Frontend build
+frontend/build/
+dashboard/build/
+
+# Backend build
+backend/build/
+
+# Database
+*.sqlite
+*.db
+
+# Others
+*.env.local
+*.env.development.local
+*.env.test.local
+*.env.production.local
