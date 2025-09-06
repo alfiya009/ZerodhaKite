@@ -63,12 +63,7 @@ zerodha/
 - `/allHoldings` - Get all holdings
 - `/newOrder` - Place a new order
 
-## Deployment
-- Backend deployed on Render: [your Render URL]
-- Frontend deployed on Vercel: [https://zerodha-kite-omega.vercel.app/holdings](https://zerodha-kite-omega.vercel.app/holdings)
+## Demo
 
-## Author
-- [alfiya009](https://github.com/alfiya009)
+- live link: [https://zerodha-kite-omega.vercel.app/holdings](https://zerodha-kite-omega.vercel.app/holdings)
 
----
-Feel free to fork, star, and contribute!
