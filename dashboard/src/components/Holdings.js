@@ -45,9 +45,39 @@ const Holdings = () => {
   //   ],
   // };
 
+
+  // Suggestion logic
+  const buySuggestions = allHoldings.filter(stock => ((stock.price - stock.avg) / stock.avg) < -0.05);
+  const sellSuggestions = allHoldings.filter(stock => ((stock.price - stock.avg) / stock.avg) > 0.10);
+
   return (
     <>
       <h3 className="title">Holdings ({allHoldings.length})</h3>
+
+      {/* Suggestions Section */}
+      <div className="suggestions" style={{marginBottom: '1rem'}}>
+        <h4>Stock Suggestions</h4>
+        <div>
+          <strong>Consider Buying:</strong>
+          {buySuggestions.length > 0 ? (
+            <ul>
+              {buySuggestions.map((stock, idx) => (
+                <li key={idx}>{stock.name} (Current price dropped more than 5% below avg)</li>
+              ))}
+            </ul>
+          ) : <span> No buy suggestions right now.</span>}
+        </div>
+        <div>
+          <strong>Consider Selling:</strong>
+          {sellSuggestions.length > 0 ? (
+            <ul>
+              {sellSuggestions.map((stock, idx) => (
+                <li key={idx}>{stock.name} (Current price increased more than 10% above avg)</li>
+              ))}
+            </ul>
+          ) : <span> No sell suggestions right now.</span>}
+        </div>
+      </div>
 
       <div className="order-table">
         <table>

@@ -58,6 +58,7 @@ zerodha/
    npm start
    ```
 
+
 ## API Endpoints
 - `/allHoldings` - Get all holdings
 - `/newOrder` - Place a new order
